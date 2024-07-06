@@ -2,12 +2,19 @@ console.log("first");
 
 let inputDisplay = "";
 
-let btn7 = document.getElementById("btn7");
+const updateDisplay=()=>{
+    let inputScreen = document.getElementById("displayCalculations");
+    inputScreen.value = inputDisplay;
+    console.log(inputScreen.value);
+}
+
+const btn7 = document.getElementById("btn7");
 btn7.addEventListener("click", (e)=>{
     btn7.value = 7;
     inputDisplay += btn7.value.toString();
     console.log(btn7.value);
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btn8 = document.getElementById("btn8");
@@ -16,6 +23,7 @@ btn8.addEventListener("click", (e)=>{
     inputDisplay += btn8.value.toString();
     console.log(btn8.value);
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btn9 = document.getElementById("btn9");
@@ -24,12 +32,14 @@ btn9.addEventListener("click", (e)=>{
     inputDisplay += btn9.value.toString();
     console.log(btn9.value);
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const del = document.getElementById("del");
 del.addEventListener("click", (e)=>{
     inputDisplay = inputDisplay.slice(0, -1);
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btn4 = document.getElementById("btn4");
@@ -38,6 +48,7 @@ btn4.addEventListener("click", (e)=>{
     inputDisplay += btn4.value.toString();
     console.log(btn4.value);
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btn5 = document.getElementById("btn5");
@@ -46,6 +57,7 @@ btn5.addEventListener("click", (e)=>{
     inputDisplay += btn5.value.toString();
     console.log(btn5.value);
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btn6 = document.getElementById("btn6");
@@ -54,12 +66,14 @@ btn6.addEventListener("click", (e)=>{
     inputDisplay += btn6.value.toString();
     console.log(btn6.value);
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btnPlus = document.getElementById("btnPlus");
 btnPlus.addEventListener("click", (e)=>{
     inputDisplay += "+";
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btn1 = document.getElementById("btn1");
@@ -68,6 +82,7 @@ btn1.addEventListener("click", (e)=>{
     inputDisplay += btn1.value.toString();
     console.log(btn1.value);
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btn2 = document.getElementById("btn2");
@@ -76,6 +91,7 @@ btn2.addEventListener("click", (e)=>{
     inputDisplay += btn2.value.toString();
     console.log(btn2.value);
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btn3 = document.getElementById("btn3");
@@ -84,18 +100,21 @@ btn3.addEventListener("click", (e)=>{
     inputDisplay += btn3.value.toString();
     console.log(btn3.value);
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btnMinus = document.getElementById("btnMinus");
 btnMinus.addEventListener("click", (e)=>{
     inputDisplay += "-";
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btnDot = document.getElementById("btnDot");
 btnDot.addEventListener("click", (e)=>{
     inputDisplay += ".";
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btn0 = document.getElementById("btn0");
@@ -104,24 +123,28 @@ btn0.addEventListener("click", (e)=>{
     inputDisplay += btn0.value.toString();
     console.log(btn0.value);
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btnDivison = document.getElementById("btnDivison");
 btnDivison.addEventListener("click", (e)=>{
     inputDisplay += "/";
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const btnMulti = document.getElementById("btnMulti");
 btnMulti.addEventListener("click", (e)=>{
     inputDisplay += "*";
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const reset = document.getElementById("reset");
 reset.addEventListener("click", (e)=>{
     inputDisplay = "";
     console.log(inputDisplay);
+    updateDisplay();
 })
 
 const equalstoBtn = document.getElementById("equalstoBtn");
