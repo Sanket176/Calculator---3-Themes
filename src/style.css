@@ -1,0 +1,94 @@
+body{
+    max-width: 1440px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "League Spartan", sans-serif;
+    background-color: hsl(222, 26%, 31%);
+}
+
+.league-spartan-boddy {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:hsl(0, 0%, 100%);
+}
+
+#displayCalculations {
+    background-color:hsl(224, 36%, 15%);
+    color:hsl(0, 0%, 100%);
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    margin: 15px 0;
+}
+
+.btns {
+    font-family: "League Spartan", sans-serif;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    margin: 15px 15px;
+    cursor: pointer;
+    color: hsl(221, 14%, 31%);
+    font-size: 25px;
+    font-weight: 800;
+    box-shadow: 0px 3px 1px hsl(28, 16%, 65%);
+}
+
+.btn:hover {
+    background-color:hsl(0, 0%, 100%);
+}
+
+#equalstoBtn {
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(0, 0%, 100%);
+    width: 170px;
+    font-size: 17px;
+    box-shadow: 0px 3px 1px hsl(6, 70%, 34%);  
+}
+
+#equalstoBtn:hover {
+    background-color:hsl(6, 76%, 67%);
+}
+
+#reset, #del {
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+    font-size: 17px;
+    box-shadow: 0px 3px 1px hsl(224, 28%, 35%);
+}
+
+#reset:hover, #del:hover {
+    background-color:hsl(225, 29%, 70%);
+}
+
+#reset {
+    width: 170px;
+}
