@@ -151,5 +151,45 @@ const equalstoBtn = document.getElementById("equalstoBtn");
 equalstoBtn.addEventListener("click", (e)=>{
     console.log(inputDisplay);
     console.log("Euqal to  btn pressed");
-    //calc(); //calulate and display the ANSWER
+    calc(); //calulate and display the ANSWER
 })
+
+const calc=()=>{
+    try{
+        inputDisplay = eval(inputDisplay);
+        updateDisplay();
+        inputDisplay = "";
+    }
+    catch{
+        inputDisplay= "Error";
+    }
+    
+}
+
+// Toggle 3 state - CODE
+
+function filterme(value) {
+    value = parseInt(value, 10); // Convert to an integer
+    var customToggle = document.getElementById('custom-toggle');
+    var spanElements = document.querySelectorAll('span');
+  
+    if (value === 1) {
+      customToggle.classList.remove('tgl-third', 'tgl-second');
+      customToggle.classList.add('tgl-first');
+      spanElements.forEach(function(span) {
+        span.textContent = 'Enabled'; 
+      });
+    } else if (value === 2) {
+      customToggle.classList.remove('tgl-first', 'tgl-third');
+      customToggle.classList.add('tgl-second');
+      spanElements.forEach(function(span) {
+        span.textContent = 'Undetermined';
+      });
+    } else if (value === 3) {
+      customToggle.classList.remove('tgl-first', 'tgl-second');
+      customToggle.classList.add('tgl-third');
+      spanElements.forEach(function(span) {
+        span.textContent = 'Disabled';
+      });
+    }
+  }

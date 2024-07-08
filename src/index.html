@@ -22,8 +22,16 @@
 <body class="league-spartan-boddy">
   <header class="header">
     <h3 class="header__title">calc</h3>
-    <h4>THEME</h4>
+    
     <!-- toggle icon 123 -->
+     <div class="themeSection">
+        <span>THEME</span>
+        <div class="wrapper"> 
+          <p>1 2 3</p>
+          <input type="range" name="points" onchange="filterme(this.value);" min="1" step="1" id="custom-toggle" class="tgl-first" max="3" value="1">
+        </div>
+     </div>
+    
   </header>
 
   <section class="calculatorDisplay">
@@ -33,7 +41,7 @@
 
   <section class="calculatorButtons">
     <div class="btns" class="league-spartan-boddy">
-      <button class="btn" id="btn7">7</button>
+      <button class="btn" class="btnV2" class="btnV3" id="btn7">7</button>
       <button class="btn" id="btn8">8</button>
       <button class="btn" id="btn9">9</button>
       <button class="btn" id="del">DEL</button>
