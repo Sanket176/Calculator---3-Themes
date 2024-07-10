@@ -172,16 +172,21 @@ function filterme(value) {
     value = parseInt(value, 10); // Convert to an integer
     var customToggle = document.getElementById('custom-toggle');
     var spanElements = document.querySelectorAll('span');
+    var displayCalculations = document.getElementById("displayCalculations");
+    // let displayCalculationsTH2 = document.getElementsByClassName("displayCalculations-TH2");
   
     if (value === 1) {
       customToggle.classList.remove('tgl-third', 'tgl-second');
       customToggle.classList.add('tgl-first');
+      displayCalculations.classList.remove('displayCalculations');
+      displayCalculations.classList.add('displayCalculations-TH2');
       spanElements.forEach(function(span) {
         span.textContent = 'Enabled'; 
       });
     } else if (value === 2) {
       customToggle.classList.remove('tgl-first', 'tgl-third');
       customToggle.classList.add('tgl-second');
+
       spanElements.forEach(function(span) {
         span.textContent = 'Undetermined';
       });

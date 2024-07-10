@@ -34,8 +34,8 @@
     
   </header>
 
-  <section class="calculatorDisplay">
-    <input type="text" id="displayCalculations" />
+  <section class="calculatorDisplay" >
+    <input type="text" onchange="filterme(this.value);" min="1" step="1" max="3" value="1" id="displayCalculations" class="displayCalculations-TH2"/>
     <!-- Dynamic answer will be rendered by login in js file -->
   </section>
 

@@ -43,14 +43,7 @@ body{
     letter-spacing: 1.8px;
 }
 
-/* .wrapper {
-    /* width: 200px; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* padding: 0px 10px; */
-
-
-  #custom-toggle {
+#custom-toggle {
     -webkit-appearance: none;
     appearance: none;
     height: 20px;
@@ -154,3 +147,23 @@ body{
 #reset {
     width: 170px;
 }
+
+
+/* Theme 2 CSS */
+
+.displayCalculations-TH2 {
+    background-color: hsl(0, 5%, 81%);
+    color:hsl(0, 0%, 4%);
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    margin: 15px 0;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: right;
+}
+
+
+
+/* Theme 3 CSS */
